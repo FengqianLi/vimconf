@@ -1,1 +1,2 @@
-This is my vim configuraton. Install ctags and cscope first before to use it.
+This is my .vimrc and tagfile including stl_tags and so on.
+First of all, we should install vundle to manage all the plugins accomplished with git. The instruction is "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle", next is ctags and cscope. After that, install all the plugins in Vundle.
