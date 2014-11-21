@@ -55,6 +55,15 @@ set ignorecase
 set number
 set autochdir
 set autoread
+set guifont=Monospace:h20
+if has('gui_running')
+    set guioptions-=T  " no toolbar
+    if has('gui_win32')
+        set guifont=DejaVu_Sans_Mono:h14:cANSI
+    else
+        set guifont=DejaVu\ Sans\ Mono\ 14
+    endif
+endif
 
 " colorscheme
 colorscheme murphy
