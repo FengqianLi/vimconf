@@ -10,7 +10,7 @@ filetype off  "required!
 
 if has('win32')
     set rtp+=~/vimfiles/bundle/Vundle.vim/
-    let path~='~/vimfiles/bundle'
+    let path='~/vimfiles/bundle'
 elseif has('mac')
     set rtp+=~/.vim/bundle/vundle/
 elseif has('unix')
