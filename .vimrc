@@ -16,7 +16,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 " vim-scripts.org repos
 Bundle 'OmniCppComplete'
-Bundle 'STL-improved'
 Bundle 'autoload_cscope.vim'
 Bundle 'cscope_macros.vim'
 Bundle 'CmdlineComplete'
@@ -28,7 +27,6 @@ Bundle 'autopreview'
 Bundle 'echofunc.vim'
 Bundle 'grep.vim'
 Bundle 'earendel'
-Bundle 'a.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
 Bundle 'Auto-Pairs'
@@ -36,12 +34,6 @@ Bundle 'SrcExpl'
 Bundle 'Trinity'
 Bundle 'taglist.vim'
 Bundle 'txt.vim'
-Bundle 'mru.vim'
-Bundle 'YankRing.vim'
-Bundle 'Align'
-Bundle 'DoxygenToolkit.vim'
-Bundle 'headerGatesAdd.vim'
-Bundle 'ShowMarks'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 " other github repos
 "
@@ -52,14 +44,14 @@ filetype plugin indent on     " required!
 
 " Common Configuration
 syntax on
-"set ignorecase
+set ignorecase
 set number
 set autochdir
 set autoread
 
 " colorscheme
-colorscheme murphy
-colorscheme earendel
+"colorscheme murphy
+" colorscheme earendel
 
 " status line
 set laststatus=2 " always have status-line'
@@ -108,26 +100,10 @@ set showmatch   " show matching paren
 set wildmenu    " 增强模式中的命令行自动完成操作
 "set mouse=a    " Enable mouse usage (all modes) in terminals
 
-"a.vim setting
-let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,reg:/include/src/g,reg:/src/include/g'
-
-" showmarks setting
-let showmarks_enable = 0 " disable showmarks when vim startup
-let showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let showmarks_ignore_type = "hqm" " help, Quickfix, non-modifiable
-
 " NERDTree options
 " Auto change the root directory
 let NERDTreeChDirMode=2
 let g:NERDTreeWinSize = 23
-
-" DoxygenToolkit setting
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="Fengqian Li" 
-let g:DoxygenToolkit_versionString="0.1.00"
-let g:DoxygenToolkit_briefTag_funcName="yes"
-autocmd BufNewFile *.{h,hpp,c,cpp} DoxAuthor 
 
 " Switching between buffers. 
 nnoremap <C-h> <C-W>h
