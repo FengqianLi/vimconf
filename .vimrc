@@ -8,7 +8,14 @@ set termencoding=utf-8
 set nocompatible " be iMproved
 filetype off  "required!
 
-set rtp+=~/.vim/bundle/vundle/
+if has('win32')
+    set rtp+=~/vimfiles/bundle/Vundle.vim/
+    let path~='~/vimfiles/bundle'
+elseif has('mac')
+    set rtp+=~/.vim/bundle/vundle/
+elseif has('unix')
+    set rtp+=~/.vim/bundle/vundle/
+endif
 call vundle#rc()
 
 " let Vundle manage plugins
@@ -50,8 +57,8 @@ set autochdir
 set autoread
 
 " colorscheme
-"colorscheme murphy
-" colorscheme earendel
+colorscheme murphy
+colorscheme earendel
 
 " status line
 set laststatus=2 " always have status-line'
