@@ -59,9 +59,9 @@ set guifont=Monospace:h20
 if has('gui_running')
     set guioptions-=T  " no toolbar
     if has('gui_win32')
-        set guifont=DejaVu_Sans_Mono:h14:cANSI
+        set guifont=DejaVu_Sans_Mono:h12:cANSI
     else
-        set guifont=DejaVu\ Sans\ Mono\ 14
+        set guifont=DejaVu\ Sans\ Mono\ 12
     endif
 endif
 
