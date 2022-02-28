@@ -4,3 +4,4 @@ How to install:
 2. Install ctags and cscope. 
 3. Make a soft link to the .vimrc and tagfiles from home directory and ~/.vim/ 
 4. Install all the plugins in vim with the command ":BundleInstall!"
+5. install the DejaVu Sans Mono font in windows
