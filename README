@@ -1,7 +1,17 @@
 This is my .vimrc and tagfile including stl_tags and so on.
 How to install:
-1. Install vundle to manage all the plugins accomplished with git. The instruction is "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle", and "git clone https://github.com/VundleVim/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim" for windows. (see it if windows https://github.com/gmarik/vundle/wiki/Vundle-for-Windows)
+
+For linux：
+1. Install vundle to manage all the plugins accomplished with git. The instruction is "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle".
 2. Install ctags and cscope. 
 3. Make a soft link to the .vimrc and tagfiles from home directory and ~/.vim/ 
+4. Install all the plugins in vim with the command ":BundleInstall!"
+5. install the DejaVu Sans Mono font in linux
+
+
+For windows:
+1. Install vundle to manage all the plugins accomplished with git. The instruction is "git clone https://github.com/VundleVim/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim" for windows. (see it if windows https://github.com/gmarik/vundle/wiki/Vundle-for-Windows)
+2. Install ctags and cscope. 
+3. Make a soft link to the _vimrc and tagfiles from home directory and ~/vimfiles/ 
 4. Install all the plugins in vim with the command ":BundleInstall!"
 5. install the DejaVu Sans Mono font in windows
